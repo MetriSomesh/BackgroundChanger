@@ -1,0 +1,16 @@
+{
+    "manifest_version":3,
+    "name":"BackChanger",
+    "description":"A simple extenstion to add a custom background to Google.com",
+    "version":"1.0",
+    "icons":{
+        "16":"./Images/icon_16.png",
+        "48":"./Images/icon_48.png",
+        "128":"./Images/icon_128.png"
+    },
+    "content_scripts":[{
+        "matches":["https://www.google.com/*"],
+        "css":["./main.css"]
+    }]
+    
+}
